@@ -34,7 +34,7 @@ function checkNumber() {
 		}
 
 		if (numberGuessesLeft == 0 && hasWon == false) {
-			message.textContent = 'You lose. Don\'t try again.'
+			message.textContent = 'You lose.                                                                                                              Faggot.'
 			again.removeAttribute('disabled')
 		}
 	}
