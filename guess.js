@@ -23,14 +23,14 @@ function checkNumber() {
 
 		if (isNumber) {
 			hasWon = true
-			message.textContent = 'You got it! Did you have fun? The correct answer is NO.'
+			message.textContent = 'Hey, thats pretty good.'
 			again.removeAttribute('disabled')
 		}
 		if (greaterNumber) {
-			message.textContent = 'Guess is high'
+			message.textContent = 'Your guess is high... 420 blaze it'
 		}
 		if (lessNumber) {
-			message.textContent = 'Guess is low'
+			message.textContent = 'Your guess is low. cancer.'
 		}
 
 		if (numberGuessesLeft == 0 && hasWon == false) {
