@@ -1,6 +1,7 @@
 h1 {
     font-family: 'Kalam', cursive;
-    background:#000000 ;
+  
+
     color: #0dad88;
     font-size:225px;
     text-align:center ;
@@ -30,7 +31,7 @@ body{
     background-attachment:fixed; 
     background-size:cover;
     background-position:center; 
-    background-image:url("tum.png");
+    background-image:url("http://static.tumblr.com/02fbd01d21eaf5667277ccf7214725d1/1yuzm5f/TvTo7rljy/tumblr_static_46fvedoi9rswgkg0k8s4k88kw.png");
     margin:0;
      text-align:center ;
 }
