@@ -750,6 +750,61 @@ Out of Range correction<input class="spoilerbutton2" type="button" value="o" onc
  ------------------------------------------------<br>
 Moving objects in different directions<input class="spoilerbutton2" type="button" value="o" onclick="this.value=this.value=='o'?'x':'o';">
 <div class="spoiler"><div id="spoilertext">
+    <img src="blob:http://imgur.com/2c9436bc-58b8-42b9-8833-9c3a74682faf"></img>
+    int frame;<br>
+int x;<br>
+int y;<br>
+void setup ()<br>
+{<br>
+  background(0);<br>
+  size(450,450);<br>
+  frame = 1;<br>
+  fill(255);<br>
+  strokeWeight(10);<br>
+  stroke(255);<br>
+  frameRate(20);<br>
+  x = 100;<br>
+  y = 100;<br>
+}<br>
+<br>
+void draw()<br>
+{<br>
+  fill(0,0,0,20);<br>
+  rect(0,0,width, height);<br>
+  stroke(0,random(128,255),random(128,255));<br>
+  point(x,y);<br>
+//down<br>
+if (frame >= 1 && frame <= 10)<br>
+{<br>
+  y = y + 25;<br>
+}<br>
+<br>
+//right<br>
+if (frame >= 10.1 && frame <= 20)<br>
+{<br>
+  x = x + 25;<br>
+}<br>
+<br>
+//up<br>
+if (frame >= 20.1 && frame <= 30)<br>
+{<br>
+  y = y - 25;<br>
+}<br>
+<br>
+//left<br>
+if (frame >= 30.1 && frame <= 40)<br>
+{<br>
+  x = x - 25;<br>
+}<br>
+<br>
+  frame++;<br>
+  <br>
+  if (frame > 40)<br>
+  {<br>
+    frame = 1;<br>
+  }<br>
+}<br>
+<br>
  </div></div>  
 <br>
  ------------------------------------------------<br>
