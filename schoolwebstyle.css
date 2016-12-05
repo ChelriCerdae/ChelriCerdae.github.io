@@ -1,6 +1,6 @@
 h1 {
     font-family: 'Kalam', cursive;
-  
+  background-attachment:fixed; 
 
     color: #89c91b;
     font-size:225px;
@@ -13,6 +13,7 @@ h1 span {
     font-size:150px;
     display:inline;
     color: crimson;
+    background-attachment:fixed; 
 }
 
 h2 span {
@@ -25,6 +26,7 @@ h2 span {
     margin: 200;
     box-shadow: 2px 3px 10px rgba(0, 0, 0, 1);
       background-color: ghostwhite;
+      background-attachment:fixed; 
 }
 
 span {
@@ -34,15 +36,17 @@ span {
     text-shadow: 2px 3px 10px rgba(0, 0, 0, 0.375);
     font-size:200px;
     margin:50;
+    background-attachment:fixed; 
 }
 gif {
     height:300px;
     width: 300px;
     border:10px solid crimson;
     border-radius: 10px;
+    background-attachment:fixed; 
 }
 img {
-    
+    background-attachment:fixed; 
     height:300px;
     border:10px solid crimson;
     border-radius: 10px;
@@ -59,6 +63,7 @@ body{
 }
 
 prolist {
+background-attachment:fixed; 
  display:block;
     padding:75; 
     color:crimson;
@@ -72,7 +77,7 @@ prolist {
 
 input {
     font-family: 'Kalam', cursive;
-    
+    background-attachment:fixed; 
     color:crimson;
     background:none;
     background-image:url("http://i.imgur.com/QkV2Wsf.png");
@@ -88,6 +93,7 @@ input {
     
 }
 div#spoilertext {
+    background-attachment:fixed; 
      font-family: 'Kalam', cursive;
     color: crimson;
     font-size:25px;
@@ -96,6 +102,7 @@ div#spoilertext {
 }
 
 span#proslist {
+    background-attachment:fixed; 
  display:block;
     padding:75; 
     color:#7cb618;
@@ -108,6 +115,7 @@ span#proslist {
 }
 
 img#icon {
+    background-attachment:fixed; 
      height:300px;
     border:10px solid #89c91b;
     border-radius: 10px;
