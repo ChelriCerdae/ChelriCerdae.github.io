@@ -862,26 +862,25 @@ User Inputs<input class="spoilerbutton2" type="button" value="o" onclick="this.v
 <br>
 Mouse inputs<input class="spoilerbutton2" type="button" value="o" onclick="this.value=this.value=='o'?'x':'o';">
 <div class="spoiler"><div id="spoilertext">
-  <img src="http://i.imgur.com/Sqo86Wk.gif"></img><br>
-  float x_value;<br>
-<br>
-void setup()<br>
-{<br>
-  size(400, 200);<br>
+  <img src="http://i.imgur.com/v77Bx2f.gif"></img><br>
+ void setup() {<br>
+  size(500,400);<br>
   background(0);<br>
-  stroke(255);<br>
-  frameRate(10);<br>
-  //noFill();<br>
-}<br>
+  noStroke();<br>
 <br>
-void draw()<br>
-{<br>
-  <br>
-  fill(0, 70);<br>
-  rect(0, 0, width, height); <br>
-  stroke(random(255),random(255),random(255));<br>
- // x_value = (x_value+61) % 400;<br>
-  rect(mouseX, mouseY, 50, 50);<br>
+}<br>
+ void draw(){<br>
+  fill(200,mouseY+8,mouseX/2);<br>
+  ellipse(mouseX,mouseY,50,50);<br>
+ <br>
+ textSize(100);<br>
+ fill(0);<br>
+text("hi", 10, 100); <br>
+fill(0);<br>
+text("stick", 60, 210);<br>
+fill(0);<br>
+text("lol", 300, 310); <br>
+}<br>
 }<br>
 
  </div></div>  
