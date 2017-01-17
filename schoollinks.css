@@ -4,13 +4,12 @@ div#links {
     margin: 0 auto;
     height:60px;
     background-color:#3c2906 ;
-    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.375);
     
 }
 
 a {
     padding:-20 ;
-    color: #89c91b;
+    color: #0dad88;
     font-size:50 ;
     
     
