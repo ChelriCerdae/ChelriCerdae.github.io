@@ -50,6 +50,7 @@ img {
     height:300px;
     border:10px solid crimson;
     border-radius: 10px;
+     box-shadow: 2px 3px 10px rgba(0, 0, 0, 1);
 }
 body{
     font-family: 'Kalam', cursive;
