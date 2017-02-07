@@ -926,6 +926,71 @@ Move your axes!<input class="spoilerbutton2" type="button" value="o" onclick="th
 <br>
 Making a spinning clock<input class="spoilerbutton2" type="button" value="o" onclick="this.value=this.value=='o'?'x':'o';">
 <div class="spoiler"><div id="spoilertext">
+  <img src="http://i.imgur.com/9tBu7wK.gif"></img><br>
+  //sadly I can't play music here so if you want to hear <br>
+//the accompanying music goto <br>
+//https://nickyflowers.bandcamp.com/track/wii-shop-channel-remix<br>
+//Rachel "the wii menu music is my jam" Perry 2017<br>
+<br>
+import beads.*;<br>
+import org.jaudiolibs.beads.*;<br>
+float minx = 0;<br>
+float miny = 0;<br>
+PImage hehe;<br>
+import beads.*;<br>
+AudioContext ac;<br>
+String sourceFile;<br>
+SamplePlayer sp;<br>
+Gain g;<br>
+Glide gainValue;<br>
+<br>
+//Wii Shopping Channel Remix - Nicky Flowers.mp3<br>
+void setup() {<br>
+  ac = new AudioContext();<br>
+  translate(240, 240);<br>
+  size(480, 480);<br>
+  sourceFile = sketchPath("") + "Wii Shopping Channel Remix - Nicky Flowers.mp3";<br>
+    try {  <br>
+    // initialize our SamplePlayer, loading the file indicated by the sourceFile string<br>
+    sp = new SamplePlayer(ac, new Sample(sourceFile));<br>
+   }<br>
+  catch(Exception e)<br>
+  {<br>
+    // if there is an error, show an error message (at the bottom of the processing window)<br>
+    println("Exception while attempting to load sample!");<br>
+    e.printStackTrace(); // then print a technical description of the error<br>
+    exit(); // and exit the program<br>
+  }<br>
+  gainValue = new Glide(ac, 0.0, 20);<br>
+  g = new Gain(ac, 1, gainValue);<br>
+  g.addInput(sp); // connect the SamplePlayer to the Gain<br>
+<br>
+  ac.out.addInput(g); // connect the Gain to the AudioContext<br>
+<br>
+  sp.setKillOnEnd(false);<br>
+<br>
+  hehe = loadImage("memedadme.jpg");<br>
+  pushMatrix();<br>
+  noFill();<br>
+  frameRate(2);<br>
+  stroke(255);<br>
+  strokeWeight(10);<br>
+  ac.start();<br>
+  pushMatrix();<br>
+  <br>
+}<br>
+<br>
+void draw() {<br>
+  gainValue.setValue(75/75); // set the gain based on mouse position<br>
+   // move the playback pointer to the first loop point (0.0)<br>
+  sp.start(); // play the audio file<br>
+  image(hehe, 0, 0);<br>
+  ellipse(240, 240, 340, 340);<br>
+  popMatrix();<br>
+  line(0, 0, 0, -140);<br>
+  rotate(0.02);<br>
+  pushMatrix();<br>
+}<br>
  </div></div>  
 <br>
 <br>
