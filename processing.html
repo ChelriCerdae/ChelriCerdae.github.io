@@ -996,6 +996,33 @@ void draw() {<br>
 <br>
 Rectangle rotating around the mouse pointer<input class="spoilerbutton2" type="button" value="o" onclick="this.value=this.value=='o'?'x':'o';">
 <div class="spoiler"><div id="spoilertext">
+  <img src =http://i.imgur.com/NfPcGXF.gif></img><br>
+//Rachel Perry 2017<br>
+  float r = 0;<br>
+<br>
+void setup()<br>
+{<br>
+ size(400,400);<br>
+ fill(0,0,255);<br>
+ colorMode(HSB);<br>
+ rectMode(CENTER);<br>
+ noStroke();<br>
+ smooth();<br>
+}<br>
+<br>
+void draw()<br>
+{<br>
+  fill(0,0,255,15);<br>
+  rect(width/2,height/2,width, height);<br>
+  <br>
+  translate(mouseX,mouseY+40);<br>
+  rotate(r);<br>
+  fill(255-(mouseX+50),255,200);<br>
+  rect(0,0,100/2,100/2);<br>
+  <br>
+  r = r+0.025;<br>
+}<br>
+
  </div></div>  
 <br>
 <br>
