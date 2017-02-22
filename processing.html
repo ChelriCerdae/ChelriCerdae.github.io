@@ -1050,6 +1050,43 @@ Creating functions()<input class="spoilerbutton2" type="button" value="o" onclic
 <br>
 Writing your own functions<input class="spoilerbutton2" type="button" value="o" onclick="this.value=this.value=='o'?'x':'o';">
 <div class="spoiler"><div id="spoilertext">
+  <img src=http://i.imgur.com/0tWtdsB.png></img>
+  void K(int x, int y)<br>
+{<br>
+  fill(random(54), random(75), random(143));<br>
+  stroke(random(54), random(75), random(143));<br>
+  rect(x, y, 100, 100);<br>
+  <br>
+  //big circle<br>
+  fill(random(75), random(111), random(32));<br>
+  stroke(random(45), 111, random(33));<br>
+  ellipse(x+50, y+50, 75, 75);<br>
+  <br>
+  //medium circle<br>
+  fill(random(75), 111, random(32));<br>
+  stroke(random(45), 111, random(33));<br>
+  ellipse(x+50, y+50, 50, 50);<br>
+  <br>
+   //small circle<br>
+  fill(random(78), 0, random(111));<br>
+  stroke(random(78), 0, random(111));<br>
+  ellipse(x+50, y+50, 25, 25);<br>
+}<br>
+<br>
+void setup() {<br>
+  size(400, 300);<br>
+ <br>
+ <br>
+  for(int row = 0; row < 400; row += 100) <br>
+  {<br>
+    for(int col = 0; col < 300; col += 100) <br>
+    {<br>
+    K(row,col);<br>
+    }<br>
+  <br>
+  }<br>
+ <br>
+}<br>
  </div></div>  
 <br>
 <br>
