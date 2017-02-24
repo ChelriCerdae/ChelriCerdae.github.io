@@ -915,8 +915,40 @@ While Loops<input class="spoilerbutton2" type="button" value="o" onclick="this.v
  </div></div>  
 <br>
 <br>
-While Loops<input class="spoilerbutton2" type="button" value="o" onclick="this.value=this.value=='o'?'x':'o';">
+Two Loops<input class="spoilerbutton2" type="button" value="o" onclick="this.value=this.value=='o'?'x':'o';">
 <div class="spoiler"><div id="spoilertext">
+  <img src=http://i.imgur.com/8Uc5CYQ.gif></img><br>
+ //RachelPerry 2017<br>
+//original code by The Coding Train<br>
+float x = 0;<br>
+float y = 0;<br>
+<br>
+float spacing = 50;<br>
+<br>
+void setup() <br>
+{<br>
+  size(400, 300);<br>
+}<br>
+<br>
+void draw()<br>
+{<br>
+  background(0);<br>
+  spacing = spacing + mouseX/100;<br>
+  stroke(255);<br>
+  strokeWeight(2);<br>
+<br>
+  x = 0;<br>
+  while (x < width) {<br>
+    line(x, 0, x, height);<br>
+    x = x + spacing;<br>
+  }<br>
+    y = 0;<br>
+  while (y < height) {<br>
+    line(0,y,width,y);<br>
+    y = y + spacing;<br>
+  }<br>
+}<br>
+ 
  </div></div>  
 <br>
 <br>
