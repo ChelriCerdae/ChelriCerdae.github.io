@@ -205,7 +205,30 @@ print("The length of the hypotenuse is ", c)<br>
 
 </span>
 
+ASCII X-Wing
+    <input class="spoilerbutton" type="button" value="o" onclick="this.value=this.value=='o'?'x':'o';">
+<div class="spoiler"><div id="spoilertext">                                                             
+<img src=http://i.imgur.com/Cjhc53H.png></img><br>
+#for each row<br>
+for row in range (10):<br>
+    for x in range(row+1):<br>
+        print('@',end='')<br>
+    for spaces in range(19-row*2):<br>
+        print(' ',end='')<br>
+    for jack in range(row+1):<br>
+        print('@',end='')<br>
+    print()<br>
+<br>
+for row in range (8,-1,-1):<br>
+    for x in range(row+1):<br>
+        print('@',end='')<br>
+    for spaces in range(19-row*2):<br>
+        print(' ',end='')<br>
+    for jack in range(row+1):<br>
+        print('@',end='')<br>
+    print()<br>
 
+</div></div>
           <img id="icon" src = "http://i.imgur.com/UspGjOP.png"></img>
     </body>
             
